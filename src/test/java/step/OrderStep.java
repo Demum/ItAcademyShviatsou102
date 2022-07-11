@@ -1,5 +1,4 @@
 package step;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -55,13 +54,15 @@ public class OrderStep {
 
 
         public void fillInputName (String name ){
-            WebElement inputSurName = driver.findElement(inputNameLocator);
-            inputSurName.sendKeys(name);
+            WebElement inputName = driver.findElement(inputNameLocator);
+            inputName.sendKeys(name);
         }
     public void selectMaleGender() {
         WebElement inputGender = driver.findElement(inputGenderLocator);
         inputGender.click();
     }
+
+
     public void clickButtonSubmit() {
         WebElement buttonSubmit = driver.findElement(buttonSubmitLocator);
         buttonSubmit.click();
